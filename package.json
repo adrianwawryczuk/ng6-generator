@@ -1,6 +1,6 @@
 {
   "name": "ng6-generator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "bin": {
     "ng6-gen": "./bin/ng6-gen.js"
   },
