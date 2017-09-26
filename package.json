@@ -1,0 +1,28 @@
+{
+  "name": "ng6-generator",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "component": "gulp component"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "kebab-case": "^1.0.0"
+  },
+  "license": "MIT",
+  "author": "Adrian Wawryczuk @Emotec",
+  "description": "Angular 1.X - ES6 code generator",
+  "engines": {
+    "node": ">=8.5.0"
+  },
+  "keywords": [
+    "NG",
+    "Angular",
+    "ES6",
+    "Generator",
+    "Component",
+    "Directive"
+  ]
+}
