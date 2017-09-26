@@ -1,15 +1,14 @@
 import './<%= kebab-case-name =>.style.less';
 import template from './<%= kebab-case-name =>.html';
-import {GlobalSearchInputController as controller} from "./<%= kebab-case-name =>.controller";
+import {<%= upper-cased-camel-case-name =>Controller as controller} from "./<%= kebab-case-name =>.controller";
 
-export const GlobalSearchInputName = 'globalSearchInput';
+export const <%= camel-case-name =>ComponentName = '<%= camel-case-name =>';
 
-export const GlobalSearchInputComponent = {
+export const <%= camel-case-name =>Component = {
     bindings: {
-        placeholder: '@'
     },
     controller,
-    controllerAs: 'globalSearchInput',
+    controllerAs: '<%= camel-case-name =>',
     template,
 };
 

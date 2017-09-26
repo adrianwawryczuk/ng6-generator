@@ -1,22 +1,26 @@
 {
   "name": "ng6-generator",
   "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "component": "gulp component"
+  "bin": {
+    "ng6-gen": "./bin/ng6-gen.js"
   },
   "dependencies": {
+    "chalk": "^2.1.0",
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1",
-    "kebab-case": "^1.0.0"
+    "kebab-case": "^1.0.0",
+    "liftoff": "^2.3.0",
+    "yargs": "^9.0.1"
   },
   "license": "MIT",
   "author": "Adrian Wawryczuk @Emotec",
+  "repository": "emotec1/ng6-generator",
   "description": "Angular 1.X - ES6 code generator",
   "engines": {
     "node": ">=8.5.0"
   },
+  "engineStrict": true,
   "keywords": [
     "NG",
     "Angular",
