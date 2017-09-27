@@ -4,7 +4,7 @@ const rename = require('gulp-rename');
 const utils = require("../utils");
 
 module.exports = function createComponent({cwd = __dirname, name = ''}) {
-    console.log(`Creating angular component ${name}`);
+    utils.log.info(`Creating angular component ${name}:`);
 
     const {camelCase, kebabCase, upperCasedCamelCase} = utils.getNames(name);
 
@@ -13,7 +13,8 @@ module.exports = function createComponent({cwd = __dirname, name = ''}) {
         .pipe(replace('<%= upper-cased-camel-case-name =>', upperCasedCamelCase))
         .pipe(replace('<%= kebab-case-name =>', kebabCase))
         .pipe(rename((path) => {
-            path.basename = path.basename.replace('kebab-case-name', kebabCase)
+            path.basename = path.basename.replace('kebab-case-name', kebabCase);
+            utils.log.info(`    ${path.basename.padStart(4)}`);
         }))
         .pipe(gulp.dest(cwd))
 };

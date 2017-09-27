@@ -1,4 +1,5 @@
 const kebabCase = require('kebab-case');
+const chalk = require('chalk');
 
 module.exports = {
     getNames: function(componentName) {
@@ -7,6 +8,15 @@ module.exports = {
             kebabCase: kebabCase(componentName),
             camelCase: kebabCase.reverse(componentName),
             upperCasedCamelCase: upperCaseString(kebabCase.reverse(componentName))
+        }
+    },
+
+    log: {
+        error: (string) => {
+            console.log(chalk.red(string));
+        },
+        info: (string) => {
+            console.log(chalk.blue(string));
         }
     }
 };
