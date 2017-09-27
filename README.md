@@ -4,4 +4,4 @@
 `npm install -g ng6-generator`
 
 ## Create component
-`ng6 run component <componentName>`
+`ng6-gen --component <componentName>`
